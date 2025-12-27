@@ -13,7 +13,7 @@ const Header = () => {
       duration={400}
     >
       <div className="p-22 pt-0">
-        <div className="p-5 bg-black sticky top-0 z-50">
+        <div className="p-5 bg-black ">
           <div className="flex items-start justify-between">
             {/* Left side */}
             <div className="text-center">
@@ -91,6 +91,7 @@ const Header = () => {
         </div>
 
         {/* here */}
+        
       </div>
     </ClickSpark>
   );
