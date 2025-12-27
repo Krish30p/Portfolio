@@ -5,6 +5,7 @@ import React from "react";
 
 const Header = () => {
   return (
+    <div className="sticky top-0 z-50 bg-black pointer-events-auto ">
     <ClickSpark
       sparkColor="#ffffff"
       sparkSize={10}
@@ -12,9 +13,9 @@ const Header = () => {
       sparkCount={8}
       duration={400}
     >
-      <div className="p-22 pt-0">
-        <div className="p-5 bg-black ">
-          <div className="flex items-start justify-between">
+      <div >
+        <div className="px-22">
+          <div className="flex items-start justify-between py-2">
             {/* Left side */}
             <div className="text-center">
               <div className="text-white text-3xl">{"<Krishna Patel />"}</div>
@@ -23,6 +24,7 @@ const Header = () => {
 
             {/* Right side */}
             <div className="flex gap-6 p-3">
+              {/* remove p-3 while removing Full Stack Developer so that both can be equal */}
               {/* GitHub */}
               <div className="relative">
                 <GlareHover
@@ -93,7 +95,7 @@ const Header = () => {
         {/* here */}
         
       </div>
-    </ClickSpark>
+    </ClickSpark></div>
   );
 };
 
