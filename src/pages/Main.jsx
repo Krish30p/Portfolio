@@ -29,12 +29,13 @@ const Main = () => {
 
       {/* myself */}
       <div className=" text-3xl leading-relaxed">
-        <p >
+        <p>
           <span className="text-gray-500">Full-stack developer</span>{" "}
           <span>focused on building scalable,</span>
         </p>
-        <p>performant web applications with {" "}
-            <span className="text-gray-500">clean architecture.</span>
+        <p>
+          performant web applications with{" "}
+          <span className="text-gray-500">clean architecture.</span>
         </p>
       </div>
 
