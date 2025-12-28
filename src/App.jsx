@@ -3,6 +3,7 @@ import Header from './pages/Header'
 import ClickSpark from './components/ClickSpark'
 import Main from './pages/Main'
 import Projects from './pages/Projects'
+import Skills from './pages/Skills'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
     <div className='bg-gray-700 w-full'>
       <Header />
       <Main />
+      <Skills />
       <Projects />
       <br />
       <br />
