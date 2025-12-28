@@ -142,30 +142,7 @@ const Skills = () => {
         </div>
         <div className="text-[#2a2a2a] text-xs ">// {"]"}</div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
     </div>
   );
 };

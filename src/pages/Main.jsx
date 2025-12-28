@@ -31,7 +31,7 @@ const Main = () => {
 
       {/* What? */}
       <div className="text-xl">
-        <span className="text-gray-500">//</span>
+        <span className="text-gray-600">//</span>
         <span>about</span>
       </div>
 
