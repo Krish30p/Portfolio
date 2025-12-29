@@ -4,6 +4,7 @@ import ClickSpark from './components/ClickSpark'
 import Main from './pages/Main'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
+import Links from './pages/Links'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Main />
       <Skills />
       <Projects />
+      <Links />
       <br />
       <br />
   

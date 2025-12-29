@@ -5,7 +5,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="sticky top-0 z-50 bg-black pointer-events-auto ">
+    <div className="sticky top-0 z-50 bg-black pointer-events-auto border-b border-[#2a2a2a]">
     <ClickSpark
       sparkColor="#ffffff"
       sparkSize={10}
@@ -14,10 +14,10 @@ const Header = () => {
       duration={400}
     >
       <div >
-        <div className="px-22">
-          <div className="flex items-start justify-between py-2">
+        <div className="px-22 ">
+          <div className="flex items-start justify-between py-2 ">
             {/* Left side */}
-            <div className="text-center">
+            <div className="text-center ">
               <div className="text-white text-3xl">{"<Krishna Patel />"}</div>
               <div className="text-gray-400 text-xl">Full Stack Developer</div>
             </div>

@@ -4,7 +4,7 @@ import GlareHover from "@/components/GlareHover";
 
 const Projects = () => {
   return (
-    <div className="bg-black text-white px-22 py-6">
+    <div className="bg-black text-white px-22 py-6 border-t border-[#2a2a2a]">
       <div>
         {/* what? */}
         <div className="text-xl">
@@ -224,30 +224,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      
     </div>
   );
 };
