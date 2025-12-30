@@ -5,6 +5,7 @@ import Main from './pages/Main'
 import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Links from './pages/Links'
+import Designed from './pages/Designed'
 
 const App = () => {
   return (
@@ -15,14 +16,14 @@ const App = () => {
       sparkCount={8}
       duration={400}
     >
-    <div className='bg-gray-700 w-full'>
+    <div >
       <Header />
       <Main />
       <Skills />
       <Projects />
       <Links />
-      <br />
-      <br />
+      <Designed />
+      
   
     </div>
 </ClickSpark>
