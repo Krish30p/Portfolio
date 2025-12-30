@@ -2,9 +2,9 @@ import React from "react";
 
 const Designed = () => {
   return (
-    <div className="bg-black text-white px-22 py-6 border-t border-[#2a2a2a] text-center">
+    <div className="bg-black text-white px-4 sm:px-22 py-6 border-t border-[#2a2a2a] text-center">
       <div>
-        <div>
+        <div className="text-sm sm:text-base">
           <span className="text-[#2a2a2a] ">// </span>
           <span className="text-[#5a5a5a]">git commit -m{"   "}</span>
           <span className="text-[#2a2a2a]">"</span>

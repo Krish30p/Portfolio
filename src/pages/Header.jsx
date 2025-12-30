@@ -3,6 +3,10 @@ import GlareHover from "@/components/GlareHover";
 import { Mail, Linkedin, Github } from "lucide-react";
 import React from "react";
 
+// Mock components for demonstration
+// const ClickSpark = ({ children, sparkColor, sparkSize, sparkRadius, sparkCount, duration }) => children;
+// const GlareHover = ({ children, glareColor, glareOpacity, glareAngle, glareSize, transitionDuration, playOnce }) => children;
+
 const Header = () => {
   return (
     <div className="sticky top-0 z-50 bg-black pointer-events-auto border-b border-[#2a2a2a]">
@@ -14,16 +18,16 @@ const Header = () => {
       duration={400}
     >
       <div >
-        <div className="px-22 ">
-          <div className="flex items-start justify-between py-2 ">
+        <div className="px-4 sm:px-22">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between py-2 gap-3 sm:gap-0">
             {/* Left side */}
             <div className="text-center ">
-              <div className="text-white text-3xl">{"<Krishna Patel />"}</div>
-              <div className="text-gray-400 text-xl">Full Stack Developer</div>
+              <div className="text-white text-2xl sm:text-3xl">{"<Krishna Patel />"}</div>
+              <div className="text-gray-400 text-lg sm:text-xl">Full Stack Developer</div>
             </div>
 
             {/* Right side */}
-            <div className="flex gap-6 p-3">
+            <div className="flex gap-4 sm:gap-6 p-3">
               {/* remove p-3 while removing Full Stack Developer so that both can be equal */}
               {/* GitHub */}
               <div className="relative">
@@ -42,7 +46,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Github color="gray" size={22} />
-                    <span>GitHub</span>
+                    <span className="hidden sm:inline">GitHub</span>
                   </a>
                 </GlareHover>
               </div>
@@ -64,7 +68,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Linkedin color="gray" size={22} />
-                    <span>LinkedIn</span>
+                    <span className="hidden sm:inline">LinkedIn</span>
                   </a>
                 </GlareHover>
               </div>
@@ -84,7 +88,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Mail color="gray" size={22} />
-                    <span>Email</span>
+                    <span className="hidden sm:inline">Email</span>
                   </a>
                 </GlareHover>
               </div>

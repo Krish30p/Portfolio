@@ -1,12 +1,16 @@
 import React from "react";
-import RotatingText from "@/components/RotatingText";
+
+// Mock component for demonstration
+const RotatingText = ({ texts, mainClassName, staggerFrom, initial, animate, exit, staggerDuration, splitLevelClassName, transition, rotationInterval }) => {
+  return <span className={mainClassName}>{texts[0]}</span>;
+};
 
 const Main = () => {
   return (
-    <div className="px-22 text-white bg-black">
-      <div className=" py-18 text-8xl ">
+    <div className="px-4 sm:px-22 text-white bg-black">
+      <div className="py-8 sm:py-18 text-4xl sm:text-6xl lg:text-8xl">
         {/* Line 1 */}
-        <div className="flex items-center gap-6 leading-none">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6 leading-none">
           <span className="leading-none text-rubik">Turning</span>
 
           <RotatingText
@@ -24,20 +28,20 @@ const Main = () => {
         </div>
 
         {/* Line 2 */}
-        <div className="leading-none mt-8">Into Experiences</div>
+        <div className="leading-none mt-4 sm:mt-8">Into Experiences</div>
       </div>
 
 
 
       {/* What? */}
-      <div className="text-xl">
+      <div className="text-lg sm:text-xl">
         <span className="text-gray-600">//</span>
         <span>about</span>
       </div>
 
 
       {/* myself */}
-      <div className="py-4 text-3xl leading-relaxed">
+      <div className="py-4 text-xl sm:text-2xl lg:text-3xl leading-relaxed">
         <p>
           <span className="text-gray-500">Full-stack developer</span>{" "}
           <span>focused on building scalable,</span>

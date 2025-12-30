@@ -1,9 +1,14 @@
 import GlareHover from "@/components/GlareHover";
 import React from "react";
 
+// Mock component for demonstration
+// const GlareHover = ({ children, glareColor, glareOpacity, glareAngle, glareSize, transitionDuration, playOnce }) => {
+//   return <div>{children}</div>;
+// };
+
 const Skills = () => {
   return (
-    <div className="px-22 text-white bg-black">
+    <div className="px-4 sm:px-22 text-white bg-black">
       <div className="py-6 ">
         <div className="text-[#2a2a2a] text-xs">// key_skills={"["}</div>
         <div className="py-2">

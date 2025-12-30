@@ -2,18 +2,18 @@ import React from "react";
 
 const Links = () => {
   return (
-    <div className="bg-black text-white px-22 py-6 border-t border-[#2a2a2a]">
+    <div className="bg-black text-white px-4 sm:px-22 py-6 border-t border-[#2a2a2a]">
       <div className="space-y-4">
         
           {/* what? */}
-          <div className="text-xl mb">
+          <div className="text-lg sm:text-xl mb">
             <span className="text-gray-600">//</span>
             <span>links</span>
           </div>
           {/* Links */}
           <div>
             <div className="space-y-4 ">
-                <div className="py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-3xl">
+                <div className="py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xl sm:text-2xl lg:text-3xl">
                     <span className="space-x-3">
                         {/* <span className="">agsvd</span> */}
                         <span className="text-[#4a4a4a]">const{''}</span>
@@ -32,7 +32,7 @@ const Links = () => {
                   </a>
                     
                 </div>
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-3xl">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xl sm:text-2xl lg:text-3xl">
                     <span className="space-x-3">
                         {/* <span className="">agsvd</span> */}
                         <span className="text-[#4a4a4a]">const{''}</span>
@@ -51,7 +51,7 @@ const Links = () => {
                   </a>
                     
                 </div>
-                <div className="py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-3xl">
+                <div className="py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xl sm:text-2xl lg:text-3xl">
                     <span className="space-x-3">
                         {/* <span className="">agsvd</span> */}
                         <span className="text-[#4a4a4a]">const{''}</span>
