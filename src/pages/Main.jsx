@@ -1,9 +1,10 @@
+import RotatingText from "@/components/RotatingText";
 import React from "react";
 
 // Mock component for demonstration
-const RotatingText = ({ texts, mainClassName, staggerFrom, initial, animate, exit, staggerDuration, splitLevelClassName, transition, rotationInterval }) => {
-  return <span className={mainClassName}>{texts[0]}</span>;
-};
+// const RotatingText = ({ texts, mainClassName, staggerFrom, initial, animate, exit, staggerDuration, splitLevelClassName, transition, rotationInterval }) => {
+//   return <span className={mainClassName}>{texts[0]}</span>;
+// };
 
 const Main = () => {
   return (

@@ -27,7 +27,7 @@ const Links = () => {
                     className="flex items-center gap-1 text-white cursor-pointer hover:text-gray-400"
                   >
                     <span className="text-[#2a2a2a]">'</span>
-                    <span className="text-[#c0c0c0]">LinkedIn.com/in/krishna-patel</span>
+                    <span className="text-[#c0c0c0]">LinkedIn.com/in/krishna-patel..</span>
                     <span className="text-[#2a2a2a]">'</span>
                   </a>
                     
