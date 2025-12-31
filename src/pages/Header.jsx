@@ -22,15 +22,15 @@ const Header = () => {
           <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between py-2 gap-3 sm:gap-0">
             {/* Left side */}
             <div className="text-center ">
-              <div className="text-white text-2xl sm:text-3xl">{"<Krishna Patel />"}</div>
-              <div className="text-gray-400 text-lg sm:text-xl">Full Stack Developer</div>
+              <div className="text-[#f0f0f0] text-2xl sm:text-3xl">{"<Krishna Patel />"}</div>
+              <div className="text-[#8a8a8a] text-lg sm:text-xl">Full Stack Developer</div>
             </div>
 
             {/* Right side */}
             <div className="flex gap-4 sm:gap-6 p-3">
               {/* remove p-3 while removing Full Stack Developer so that both can be equal */}
               {/* GitHub */}
-              <div className="relative">
+              <div className="relative ">
                 <GlareHover
                   glareColor="#ffffff"
                   glareOpacity={0.3}
@@ -46,7 +46,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Github color="gray" size={22} />
-                    <span className="hidden sm:inline">GitHub</span>
+                    <span className="hidden sm:inline text-[#9a9a9a]">GitHub</span>
                   </a>
                 </GlareHover>
               </div>
@@ -68,7 +68,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Linkedin color="gray" size={22} />
-                    <span className="hidden sm:inline">LinkedIn</span>
+                    <span className="hidden sm:inline text-[#9a9a9a]">LinkedIn</span>
                   </a>
                 </GlareHover>
               </div>
@@ -88,7 +88,7 @@ const Header = () => {
                     className="flex items-center gap-2 text-white cursor-pointer hover:text-gray-400"
                   >
                     <Mail color="gray" size={22} />
-                    <span className="hidden sm:inline">Email</span>
+                    <span className="hidden sm:inline text-[#9a9a9a]">Email</span>
                   </a>
                 </GlareHover>
               </div>

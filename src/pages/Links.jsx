@@ -7,7 +7,7 @@ const Links = () => {
         
           {/* what? */}
           <div className="text-lg sm:text-xl mb">
-            <span className="text-gray-600">//</span>
+            <span className="text-[#4a4a4a]">//</span>
             <span>links</span>
           </div>
           {/* Links */}

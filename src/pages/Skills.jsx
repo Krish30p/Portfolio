@@ -12,7 +12,7 @@ const Skills = () => {
       <div className="py-6 ">
         <div className="text-[#2a2a2a] text-xs">// key_skills={"["}</div>
         <div className="py-2">
-          <div className="flex items-center gap-2 flex-wrap">
+          <div className="flex items-center gap-2 flex-wrap text-[#8a8a8a]">
             <GlareHover
               glareColor="#ffffff"
               glareOpacity={0.3}
