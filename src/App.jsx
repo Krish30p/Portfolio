@@ -6,7 +6,7 @@ import Projects from './pages/Projects'
 import Skills from './pages/Skills'
 import Links from './pages/Links'
 import Designed from './pages/Designed'
-import Certificates from './pages/Certificates'
+// import Certificates from './pages/Certificates'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       <Main />
       <Skills />
       <Projects />
-      <Certificates />
+      {/* <Certificates /> */}
       <Links />
       <Designed />
       
