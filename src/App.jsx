@@ -17,22 +17,23 @@ const App = () => {
       sparkCount={8}
       duration={400}
     >
-    <div >
-      <Header />
-      <Main />
-      <Skills />
-      <Projects />
+      <div>
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Main />
+          <Skills />
+          <Projects />
       {/* <Certificates /> */}
-      <Links />
-      <Designed />
-      
-  
-    </div>
-</ClickSpark>
+          <Links />
+        </main>
+        <footer>
+          <Designed />
+        </footer>
+      </div>
+    </ClickSpark>
   )
 }
 
-
 export default App
-// will have to add snowfall later here!!
-// clickspark is working..
