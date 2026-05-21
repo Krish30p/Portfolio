@@ -18,9 +18,7 @@ const App = () => {
       duration={400}
     >
       <div>
-        <header>
-          <Header />
-        </header>
+        <Header />
         <main>
           <Main />
           <Skills />
