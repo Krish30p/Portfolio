@@ -45,16 +45,31 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+import { navigate } from "@/lib/router";
+
+const Projects = ({ isFullPage = false }) => {
+  const displayedProjects = isFullPage ? projects : projects.slice(0, 3);
+
   return (
     <section className="bg-black text-white px-4 sm:px-22 py-6 border-t border-[#2a2a2a]">
       <div>
-        <div className="text-lg sm:text-xl">
-          <span className="text-[#4a4a4a]">//</span>
-          <span>projects</span>
+        {isFullPage && (
+          <div className="mb-8">
+            <button
+              onClick={() => navigate("/")}
+              className="inline-flex items-center gap-2 text-[#8a8a8a] hover:text-white transition cursor-pointer text-base sm:text-lg"
+            >
+              <span>← Back to Home</span>
+            </button>
+          </div>
+        )}
+
+        <div className="text-lg sm:text-xl mb-4">
+          <span className="text-[#4a4a4a]">// </span>
+          <span>{isFullPage ? "all projects" : "projects"}</span>
         </div>
 
-        {projects.map((project) => (
+        {displayedProjects.map((project) => (
           <div key={project.id} className="py-4">
             <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 text-2xl sm:text-3xl lg:text-4xl py-2">
               <span className="text-[#4a4a4a]">{project.name}</span>
@@ -103,6 +118,18 @@ const Projects = () => {
             </div>
           </div>
         ))}
+
+        {!isFullPage && (
+          <div className="mt-10 mb-4">
+            <button
+              onClick={() => navigate("/projects")}
+              className="inline-flex items-center gap-2 px-6 py-3 border border-[#4a4a4a] rounded-lg text-white hover:bg-white hover:text-black hover:border-white transition cursor-pointer text-base sm:text-lg font-medium"
+            >
+              <span>View All Projects</span>
+              <span className="text-xl">→</span>
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
+import React from "react";
 import GlareHover from "@/components/GlareHover";
 import { Mail, Linkedin, Github } from "lucide-react";
-import React from "react";
+import { navigate } from "@/lib/router";
 
 const Header = () => {
   return (
@@ -8,8 +9,13 @@ const Header = () => {
       <div className="px-4 sm:px-22">
         <div className="flex flex-col sm:flex-row items-center sm:items-start justify-between py-2 gap-3 sm:gap-0">
           {/* Left side */}
-          <div className="text-center">
-            <h1 className="text-[#f0f0f0] text-2xl sm:text-3xl">{"<Krishna Patel />"}</h1>
+          <div className="text-center select-none">
+            <h1 
+              onClick={() => navigate("/")}
+              className="text-[#f0f0f0] text-2xl sm:text-3xl cursor-pointer hover:text-[#c0c0c0] transition"
+            >
+              {"<Krishna Patel />"}
+            </h1>
             <p className="text-[#8a8a8a] text-lg sm:text-xl">Full Stack Developer</p>
           </div>
 
