@@ -121,13 +121,28 @@ const Projects = ({ isFullPage = false }) => {
 
         {!isFullPage && (
           <div className="mt-10 mb-4">
-            <button
-              onClick={() => navigate("/projects")}
-              className="inline-flex items-center gap-2 px-6 py-3 border border-[#4a4a4a] rounded-lg text-white hover:bg-white hover:text-black hover:border-white transition cursor-pointer text-base sm:text-lg font-medium"
+            <GlareHover
+              width="auto"
+              height="auto"
+              background="transparent"
+              borderColor="transparent"
+              borderRadius="0.5rem"
+              glareColor="#ffffff"
+              glareOpacity={0.4}
+              glareAngle={-30}
+              glareSize={200}
+              transitionDuration={800}
+              playOnce={false}
+              className="border-none hover:scale-105 active:scale-95 transition-all duration-300 inline-block"
             >
-              <span>View All Projects</span>
-              <span className="text-xl">→</span>
-            </button>
+              <button
+                onClick={() => navigate("/projects")}
+                className="inline-flex items-center gap-2 px-6 py-3 border border-[#4a4a4a] rounded-lg text-white cursor-pointer text-base sm:text-lg font-medium transition-all duration-300"
+              >
+                <span>View All Projects</span>
+                <span className="text-xl">→</span>
+              </button>
+            </GlareHover>
           </div>
         )}
       </div>
