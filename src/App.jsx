@@ -3,6 +3,7 @@ import Header from './pages/Header'
 import ClickSpark from './components/ClickSpark'
 import Main from './pages/Main'
 import Projects from './pages/Projects'
+import Experience from './pages/Experience'
 import Skills from './pages/Skills'
 import Links from './pages/Links'
 import Designed from './pages/Designed'
@@ -27,15 +28,18 @@ const App = () => {
       sparkCount={8}
       duration={400}
     >
-      <div>
+      <div className="min-h-screen bg-black flex flex-col justify-between">
         <Header />
-        <main>
+        <main className="flex-grow bg-black">
           {currentPath === '/projects' ? (
             <Projects isFullPage={true} />
+          ) : currentPath === '/experience' ? (
+            <Experience isFullPage={true} />
           ) : (
             <>
               <Main />
               <Skills />
+              <Experience isFullPage={false} />
               <Projects isFullPage={false} />
               {/* <Certificates /> */}
               <Links />
