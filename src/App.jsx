@@ -10,6 +10,7 @@ import Links from './pages/Links'
 import Designed from './pages/Designed'
 import NotFound from './pages/NotFound'
 import ExperienceTerminal from './pages/ExperienceTerminal'
+import ProjectsTerminal from './pages/ProjectsTerminal'
 // import Certificates from './pages/Certificates'
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
       <div className="min-h-screen bg-black flex flex-col justify-between">
         <Header />
         <main className="flex-grow bg-black">
-          {currentPath === '/' || currentPath === '/experience' ? (
+          {currentPath === '/' || currentPath === '/experience' || currentPath === '/projects' ? (
             <>
               <Main />
               <Skills />
@@ -45,9 +46,10 @@ const App = () => {
               <AnimatePresence>
                 {currentPath === '/experience' && <ExperienceTerminal />}
               </AnimatePresence>
+              <AnimatePresence>
+                {currentPath === '/projects' && <ProjectsTerminal />}
+              </AnimatePresence>
             </>
-          ) : currentPath === '/projects' ? (
-            <Projects isFullPage={true} />
           ) : (
             <NotFound />
           )}
