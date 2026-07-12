@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { AnimatePresence } from 'motion/react'
 import Header from './pages/Header'
 import ClickSpark from './components/ClickSpark'
 import Main from './pages/Main'
@@ -8,6 +9,7 @@ import Skills from './pages/Skills'
 import Links from './pages/Links'
 import Designed from './pages/Designed'
 import NotFound from './pages/NotFound'
+import ExperienceTerminal from './pages/ExperienceTerminal'
 // import Certificates from './pages/Certificates'
 
 const App = () => {
@@ -32,7 +34,7 @@ const App = () => {
       <div className="min-h-screen bg-black flex flex-col justify-between">
         <Header />
         <main className="flex-grow bg-black">
-          {currentPath === '/' ? (
+          {currentPath === '/' || currentPath === '/experience' ? (
             <>
               <Main />
               <Skills />
@@ -40,11 +42,12 @@ const App = () => {
               <Projects isFullPage={false} />
               {/* <Certificates /> */}
               <Links />
+              <AnimatePresence>
+                {currentPath === '/experience' && <ExperienceTerminal />}
+              </AnimatePresence>
             </>
           ) : currentPath === '/projects' ? (
             <Projects isFullPage={true} />
-          ) : currentPath === '/experience' ? (
-            <Experience isFullPage={true} />
           ) : (
             <NotFound />
           )}

@@ -1,41 +1,7 @@
 import React from "react";
 import GlareHover from "@/components/GlareHover";
 import { navigate } from "@/lib/router";
-
-const experiences = [
-  {
-    id: 1,
-    role: "Full Stack Developer Intern",
-    company: "Sahana Systems Limited",
-    period: "June 2026 – July 2026",
-    description:
-      "Worked on cloud-focused development and infrastructure projects involving AWS services, Linux administration, and modern deployment workflows while building scalable web applications and exploring DevOps practices.",
-    contributions: [
-      "Designed and deployed cloud infrastructure using core AWS services including EC2, S3, IAM, Auto Scaling Groups, and Application Load Balancers.",
-      "Configured Linux-based virtual machines, Nginx web servers, security groups, and networking components for cloud deployments.",
-      "Built and tested scalable infrastructure capable of automatically handling increased traffic using AWS Auto Scaling and CloudWatch monitoring.",
-      "Worked with Docker containers to understand application packaging, deployment, and environment consistency.",
-      "Developed and maintained full-stack applications using React, Node.js, Express.js, and MongoDB.",
-      "Collaborated on integrating cloud services into application workflows while following Git-based development practices.",
-    ],
-    stack: [
-      "AWS",
-      "EC2",
-      "S3",
-      "IAM",
-      "Auto Scaling",
-      "CloudWatch",
-      "ALB",
-      "Linux",
-      "Nginx",
-      "Docker",
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Git",
-    ],
-  },
-];
+import { experiences } from "@/data/experience";
 
 const Experience = ({ isFullPage = false }) => {
   const displayedExperiences = isFullPage ? experiences : experiences.slice(0, 2);
@@ -76,9 +42,9 @@ const Experience = ({ isFullPage = false }) => {
               {exp.description}
             </p>
 
-            {exp.contributions && (
+            {exp.summary && (
               <ul className="list-disc list-outside space-y-2 text-[#a0a0a0] py-2 text-base sm:text-lg lg:text-xl pl-5">
-                {exp.contributions.map((bullet, idx) => (
+                {exp.summary.map((bullet, idx) => (
                   <li key={idx} className="leading-relaxed">
                     {bullet}
                   </li>
