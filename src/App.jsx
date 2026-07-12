@@ -7,6 +7,7 @@ import Experience from './pages/Experience'
 import Skills from './pages/Skills'
 import Links from './pages/Links'
 import Designed from './pages/Designed'
+import NotFound from './pages/NotFound'
 // import Certificates from './pages/Certificates'
 
 const App = () => {
@@ -31,11 +32,7 @@ const App = () => {
       <div className="min-h-screen bg-black flex flex-col justify-between">
         <Header />
         <main className="flex-grow bg-black">
-          {currentPath === '/projects' ? (
-            <Projects isFullPage={true} />
-          ) : currentPath === '/experience' ? (
-            <Experience isFullPage={true} />
-          ) : (
+          {currentPath === '/' ? (
             <>
               <Main />
               <Skills />
@@ -44,6 +41,12 @@ const App = () => {
               {/* <Certificates /> */}
               <Links />
             </>
+          ) : currentPath === '/projects' ? (
+            <Projects isFullPage={true} />
+          ) : currentPath === '/experience' ? (
+            <Experience isFullPage={true} />
+          ) : (
+            <NotFound />
           )}
         </main>
         <footer>
